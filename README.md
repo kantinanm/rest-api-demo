@@ -19,7 +19,7 @@ Use powershell or cmd and type by order, please see below.
     user: '', // user for database
     password: '', //password for database
     database: '' //database name
- };
+  };
 - `npm run start`
 
 
