@@ -1,8 +1,0 @@
-const config = {
-    host: '', // ip or name host machine(db) mysql
-    user: '', // user for database
-    password: '', //password for database
-    database: '' //database name
-};
-
-module.exports = config;
