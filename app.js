@@ -1,11 +1,12 @@
 const express = require('express');
 const cors = require('cors');
-
+const winston = require('winston');
 const config = require('./config');
 
 //var util = require('./util');
 
 const app = express();
+require('./logging')();
 
 app.use(express.json());
 app.use(cors());
@@ -19,6 +20,11 @@ app.get('/', (req, res) =>
 );
 
 app.listen(config.port, (err) => {
-  // err handling
-  console.log(`Node App is running on  port: ${config.port}`);
+  if (err) {
+    console.log(err);
+    winston.info(err.message, err);
+  } else {
+    winston.info(`Node App is running on  port: ${config.port}`);
+    console.log(`Node App is running on  port: ${config.port}`);
+  }
 });
