@@ -1,11 +1,14 @@
 const express = require('express');
-const mysql = require('mysql');
+const cors = require('cors');
+
 const config = require('./config');
+
 //var util = require('./util');
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) =>
@@ -15,7 +18,7 @@ app.get('/', (req, res) =>
   }),
 );
 
-app.listen(3000, (err) => {
+app.listen(config.port, (err) => {
   // err handling
-  console.log('Node App is running on  port: 3000 ');
+  console.log(`Node App is running on  port: ${config.port}`);
 });
