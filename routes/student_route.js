@@ -5,6 +5,6 @@ const router = express.Router();
 
 router.post('/student', addStudent);
 
-module.export = {
+module.exports = {
   routes: router,
 };

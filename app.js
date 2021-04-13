@@ -20,7 +20,7 @@ app.get('/', (req, res) =>
   }),
 );
 
-//app.use('/api', studentRoutes.routes);
+app.use('/api', studentRoutes.routes);
 
 app.listen(config.port, (err) => {
   if (err) {

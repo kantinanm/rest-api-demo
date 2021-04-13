@@ -4,6 +4,7 @@ class Student {
     firstName,
     lastName,
     gender,
+    provinceName,
     registedYear,
     grade,
     statusId,
@@ -14,6 +15,7 @@ class Student {
     this.firstname = firstName;
     this.lastname = lastName;
     this.gender = gender;
+    this.province_name = provinceName;
     this.register_year = registedYear;
     this.grade = grade;
     this.status_id = statusId;
