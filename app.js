@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const winston = require('winston');
 const config = require('./config');
+const studentRoutes = require('./routes/student_route');
 
 //var util = require('./util');
 
@@ -18,6 +19,8 @@ app.get('/', (req, res) =>
     message: 'Welcome to RESTful CRUD API with NodeJS, Express,MYSQL',
   }),
 );
+
+//app.use('/api', studentRoutes.routes);
 
 app.listen(config.port, (err) => {
   if (err) {

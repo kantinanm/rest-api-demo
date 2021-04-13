@@ -32,11 +32,20 @@
         "no-unused-expressions": "off",
         "no-multi-spaces": "warn",
         "no-multiple-empty-lines": "off",
+        "import/extensions": "off",
+        "arrow-body-style": "warn",
         "prefer-const": "warn",
         "class-methods-use-this": "off",
         "prefer-destructuring": ["error", { "object": true, "array": false }],
         "no-unused-vars": ["warn", { "argsIgnorePattern": "req|res|next|val|err" }],
         "node/no-unpublished-require": 0,
         "node/no-missing-require": 0
-    }
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
+      }
 }
