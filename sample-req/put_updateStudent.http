@@ -1,0 +1,11 @@
+PUT http://localhost:3000/api/student/5500082 HTTP/1.1
+content-type: application/json
+
+{
+    "firstname": "yyyyy",
+    "lastname": "zzzz",
+    "gender": "ชาย",
+    "register_year": "2013",
+    "grade": "5.01",
+    "degree": "ปริญญาตรี"
+}

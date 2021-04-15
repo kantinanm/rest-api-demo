@@ -7,7 +7,7 @@ content-type: application/json
     "lastname": "XXXXXXXXX",
     "gender": "หญิง",
     "province_name": "กรุงเทพมหานคร",
-    "register_year": "2017",
+    "register_year": "2012",
     "grade": "3.01",
     "status_id": "1",
     "magor_id": "10101",
