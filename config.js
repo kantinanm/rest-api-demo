@@ -1,7 +1,10 @@
 const dotenv = require('dotenv');
+const path = require('path');
 const assert = require('assert');
 
-dotenv.config();
+dotenv.config({
+  path: path.resolve('.env'),
+});
 const {
   PORT,
   HOST,
